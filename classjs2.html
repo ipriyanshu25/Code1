@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a{
+        margin-right: 50px;
+    }
+</style>
+<body>
+    <img src="classgla/jerry.jpg" alt="">
+
+    <script>
+        // const links=[
+        //     {url:"https://www.youtube.com/",text:"youtube1"},
+        //     {url:"https://www.youtube.com/",text:"youtube2"},
+        //     {url:"https://www.youtube.com/",text:"youtube3"},
+        //     {url:"https://www.youtube.com/",text:"youtube4"},
+        //     {url:"https://www.youtube.com/",text:"youtube5"},
+        // ]
+
+        const links=[
+            {url:"classgla/jerry.jpg", text:"img1"},
+            {url:"classgla/jerry.jpg", text:"img1"},
+            {url:"classgla/jerry.jpg", text:"img1"},
+            {url:"classgla/jerry.jpg", text:"img1"},
+            {url:"classgla/jerry.jpg", text:"img1"},
+        ]
+
+
+        links.forEach(items=>{
+            // const aTag = document.createElement('a')
+            // aTag.setAttribute('href',items.url)
+            // aTag.textContent = items.text
+            // document.body.appendChild(aTag)
+
+            const imgTag = document.createElement('img')
+            imgTag.setAttribute('src',items.url)
+            // img.textContent=items.text
+            document.body.appendChild(imgTag)
+
+
+
+            
+        })
+    </script>
+    
+</body>
+</html>

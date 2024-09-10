@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .parent{
+            background-color: yellowgreen;
+        }
+        /* .new{
+            background-color: blue;
+        } */
+        /* .parent>.child{                      
+            background-color: red;
+        }  */
+        /* div p{                                      it is decendent selector it will work wil all thi paragraph inside it weather it is nested or normal
+            background-color: blue;
+        } */
+
+        /* div + p{                  it is siblling selector it will cwork only for that tag which is just after the div tag only for that single line 
+            background-color: blue;
+        } */
+
+        /* div ~ p{                          this is the gemneral sibling symbol it will make all tha tag mensioned in it with the given changes
+            background-color: blueviolet;
+        } */ 
+
+        /* p:hover{
+            background-color: rgb(75, 45, 103);
+        } */
+        /* a::selection{
+            color:var(red);
+        } */
+
+        /* strong{
+            background-color: rgb(255, 0, 0);
+        } */
+        /* strong{
+            display: none;
+        }
+        div:hover>strong{
+            display: block;
+        } */
+        /* div:hover>p{
+            display: block;
+        } */
+        /* p::after{
+            content: ".";
+            display: none;
+        } */
+        .box{
+            border: 1px solid red;
+            /*padding: 20px 20px 20px 50px;*/  /* top right bottom left  this padding is called shorthand padding*/
+            /* border-color: s red; */
+            width: 300px;
+            border-color: red;
+            
+
+        }
+        
+        .insidebox{
+            border: 1px solid red;
+            /* width: 300px; */
+            /* padding: 20px 20px 20px 50px; */
+            padding: 10vw;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="parent">                it is the main class so its element will going to apply in all its element 
+        <p class="child">test</p>
+        <section>
+            <p class=""> inside</p>        it will not work because the parent different it is section not div
+        </section>
+        <div class="new">test</div>
+        <p class="child">test</p>
+        <p class="child">test</p>
+    </div> -->
+
+    <!-- <div class="null">
+        <section>
+            <p class="">nested</p>
+        </section>
+        <p class="">outside</p>
+
+    </div> -->
+<!-- 
+    <div class="null">
+        <p class="">nested</p>
+        <section>
+            <p class="">nested</p>
+        </section>
+        <p class="">outside</p>
+    </div>
+    <p class="">just after the div</p>                 this  linke is just after the div so it will act as sibbling-->
+    <!-- <p class="">just after the div</p> -->
+    <!-- <a href="#text">this is a text</a> -->
+    <div class="box"> 
+        outside box
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="insidebox">
+        hello
+    </div>
+
+</body>
+</html>

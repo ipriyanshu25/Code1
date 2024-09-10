@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .dashboard {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .section-content {
+            padding: 20px;
+        }
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+        .dark-mode .section-header {
+            background-color: #444;
+        }
+        .dark-mode .section-content {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Welcome, User!</h1>
+        <section class="section">
+            <div class="section-header">Profile</div>
+            <div class="section-content">
+                <p>Username:</p>
+                <p>Email:</p>
+                <button class="edit-profile">Edit Profile</button>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-header">Settings</div>
+            <div class="section-content">
+                <label>Dark Mode:</label>
+                <input type="checkbox" id="dark-mode" />
+                <br />
+                <label>Language:</label>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="es">Hindi</option>
+                    <option value="fr">French</option>
+                </select>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-header">Statistics</div>
+            <div class="section-content">
+                <p>Total Logins: <strong>10</strong></p>
+                <p>Last Login: <strong>2023-02-20 14:30:00</strong></p>
+                <button class="view-more-stats">View More Stats</button>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-header">Actions</div>
+            <div class="section-content">
+                <form action="indexcl2.html">
+                    <button class="logout">Logout</button>
+                </form>
+                
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const darkModeCheckbox = document.getElementById('dark-mode');
+        const dashboard = document.querySelector('.dashboard');
+
+        darkModeCheckbox.addEventListener('change', () => {
+            if (darkModeCheckbox.checked) {
+                dashboard.classList.add('dark-mode');
+            } else {
+                dashboard.classList.remove('dark-mode');
+            }
+        });
+
+        const editProfileButton = document.querySelector('.edit-profile');
+        const viewMoreStatsButton = document.querySelector('.view-more-stats');
+        const createNewProjectButton = document.querySelector('.create-new-project');
+        const viewAllProjectsButton = document.querySelector('.view-all-projects');
+        const logoutButton = document.querySelector('.logout');
+
+        editProfileButton.addEventListener('click', () => {
+            alert('Edit profile functionality coming soon!');
+        });
+
+        viewMoreStatsButton.addEventListener('click', () => {
+            alert('View more stats functionality coming soon!');
+        });
+
+        createNewProjectButton.addEventListener('click', () => {
+            alert('Create new project functionality coming soon!');
+        });
+
+        viewAllProjectsButton.addEventListener('click', () => {
+            alert('View all projects functionality coming soon!');
+        });
+
+        logoutButton.addEventListener('click', () => {
+            alert('Logout functionality coming soon!');
+        });
+    </script>
+</body>
+</html>

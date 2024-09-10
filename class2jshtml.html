@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let data = []
+        console.log(data)
+        const getdata = async () => {
+            let responce = await fetch("https://catfact.ninja/fact");
+            const varaiable2 = await response.json();
+            console.log(varaiable2);
+            return data;
+        };
+
+        data.forEach((item, indx) => {
+            const h1 = document.createElement('h1')
+            h1.textContent = `${indx + 1} - ${item.name}`
+            document.body.appendChild(h1)
+        })
+        getdata();
+    </script>
+</body>
+
+</html>
